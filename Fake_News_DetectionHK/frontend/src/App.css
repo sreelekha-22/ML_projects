@@ -1,0 +1,130 @@
+/* App.css */
+body {
+  overflow: hidden;
+}
+.navbar {
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  /* justify-content: space-between; */
+  /* justify-content: center; */
+}
+
+.navbar button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 0 10px; /* Equal margin between buttons */
+}
+
+.navbar button:hover {
+  background-color: #555;
+}
+
+/* .content {
+  padding: 20px;
+} */
+.prediction-button {
+  background-color: green;
+
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.prediction-button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.content {
+  text-align: center;
+  height: 1000px;
+  width: 1553px;
+  border: 2px solid black;
+  /* display: flex; */
+  justify-content: center;
+  background-image: url(../public/images/bk_pred.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fakeimage {
+  object-fit: cover;
+  object-position: center;
+  height: 900px;
+  width: 1600px;
+}
+.home {
+  height: 1900px;
+  width: 1600px;
+  /* border: 2px solid black; */
+  text-align: center;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+/* .outerprediction {
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+} */
+/* .predictionbox {
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  position: relative;
+  left: 80px;
+} */
+.imagetrans1 {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.news_text {
+  width: 100px;
+  height: 50px;
+  overflow: auto;
+}
+/* textarea {
+  position: relative;
+  left: 120px;
+  height: 250px;
+  top: 30px;
+} */
+.prediction-button {
+  top: 100px;
+  margin-left: auto;
+
+  background-color: rgb(51, 128, 0);
+  height: 50px;
+  width: 200px;
+  padding: 15px;
+  font-size: large;
+}
+.news_art {
+  overflow: auto;
+  margin: 50px;
+}
+
+.predictionbox {
+  margin-top: 100px !important;
+  background-color: white;
+  width: 200px;
+  height: 80px;
+  margin: auto;
+}
+
+.res {
+  font-size: 50px;
+}

@@ -1,16 +1,12 @@
----
-
 # 🧠 Fake News Detection System
 
 **Full Stack AI Web Application — React + Flask + LSTM (94% Accuracy)**
 
----
 
 ## 📌 Overview
 
 A real-time fake news detection system that uses a **deep learning LSTM model** to classify news as **REAL or FAKE**. The project is fully implemented as a **full stack application** with a React frontend, Flask backend, and an AI model trained on a real-world Kaggle dataset.
 
----
 
 ## 🧾 Dataset
 
@@ -22,7 +18,7 @@ Trained on the **Kaggle Fake News Dataset**, containing labeled news articles. P
 * Sequence padding
 * Word embeddings
 
----
+
 
 ## 🛠 Tech Stack
 
@@ -34,7 +30,6 @@ Trained on the **Kaggle Fake News Dataset**, containing labeled news articles. P
 | Dataset     | Kaggle (Fake News)      |
 | Libraries   | TensorFlow, Keras, NLTK |
 
----
 
 ## 📈 Model Performance
 
@@ -44,7 +39,6 @@ Trained on the **Kaggle Fake News Dataset**, containing labeled news articles. P
 | Latency   | < 400ms          |
 | Framework | TensorFlow/Keras |
 
----
 
 ## ⚙️ Features
 
@@ -54,27 +48,25 @@ Trained on the **Kaggle Fake News Dataset**, containing labeled news articles. P
 * Trained on a real-world Kaggle dataset
 * Modular & scalable architecture
 
----
 
 ## 🌐 API Example
 
 **POST /predict**
 
-```json
+json
 {
   "text": "Breaking news: Scientists confirm aliens are living on Mars!"
 }
-```
 
 **Response**
 
-```json
+json
 {
   "prediction": "FAKE",
   "confidence": 0.92
 }
-```
----
+
+
 
 ## 🔮 Future Enhancements
 
@@ -85,4 +77,3 @@ Trained on the **Kaggle Fake News Dataset**, containing labeled news articles. P
 * Analytics dashboard (fake vs real statistics)
 * Cloud deployment (AWS / Render / Railway / Docker)
 
----

@@ -6,7 +6,7 @@ through a trained model to a running application.
 | Project | Task | Approach | Link |
 |---|---|---|---|
 | **Fake News Detection** | Classify news as real or fake from raw text | LSTM sequence classifier + Flask API + React UI | [Fake_News_DetectionHK](Fake_News_DetectionHK) |
-| **Medicinal Plant Detection** | Identify 1 of 78 Ayurvedic plant species from a leaf image | VGG19 transfer learning, frozen backbone | [Med_Plant_Detection](Med_Plant_Detection) |
+| **Medicinal Plant Detection** | Identify 1 of 80 Ayurvedic plant species from a leaf image | VGG19 transfer learning, frozen backbone | [Med_Plant_Detection](Med_Plant_Detection) |
 | **Poultry Disease Detection** | Detect 1 of 4 poultry conditions from an image | VGG19 transfer learning, frozen backbone | [Poultry_disease_detection](Poultry_disease_detection) |
 
 ---
@@ -57,10 +57,10 @@ Training work lives in `backend/trial-tr-text-lg.ipynb`.
 
 ## Medicinal Plant Detection
 
-A **78-class Ayurvedic medicinal-plant identifier** — it classifies a leaf image as Tulsi, Neem,
+An **80-class Ayurvedic medicinal-plant identifier** — it classifies a leaf image as Tulsi, Neem,
 Amla, Turmeric, Ashoka, Brahmi and 72 more.
 
-- **Model** — VGG19 with the ImageNet head removed, frozen, plus a single `Dense(78, softmax)`
+- **Model** — VGG19 with the ImageNet head removed, frozen, plus a single `Dense(80, softmax)`
   classification layer
 - **Dataset** — `FMLd/`, one folder per species, loaded via `ImageDataGenerator`
 - **Weights** — `model_2_vgg19.h5`
@@ -76,7 +76,7 @@ Amla, Turmeric, Ashoka, Brahmi and 72 more.
 | `mePD2.py` | The training script — VGG19 + dense head, `ImageDataGenerator`, early stopping |
 | `Med_plant_det.ipynb` | Colab notebook that mounts Drive and runs `mePD2.py` |
 
-**The 78 classes**
+**The 80 classes**
 
 <details>
 <summary>Full class list</summary>
@@ -129,7 +129,7 @@ A **4-class** image classifier for early detection of disease in poultry flocks.
 ## Notes
 
 - **The two classifiers are independent** — different datasets (`FMLd/` vs `plD/`), different label
-  spaces (78 plant species vs 4 poultry conditions), different weights
+  spaces (80 plant species vs 4 poultry conditions), different weights
   (`model_2_vgg19.h5` vs `plD_vgg19.h5`).
 - The standalone [Medicinal-Plant-Identification](https://github.com/sreelekha-22/Medicinal-Plant-Identification)
   repo currently loads **`plD_vgg19.h5`** — the *poultry* weights — despite its name. See that
